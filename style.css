@@ -103,7 +103,7 @@ body{
   
 
 .button-85 {
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 0.6em 2em;
     border: none;
     outline: none;
@@ -285,4 +285,193 @@ margin-top: 50px;
    }
  
  }
+ .custom-shape-divider-top-1709003081 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1709003081 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 206px;
+}
+
+.custom-shape-divider-top-1709003081 .shape-fill {
+    fill: #13072E;
+}
+.button-89 {
+    --b: 7px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #6366f1;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 20px;
+  margin-top: 20px;
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+  .buttn{
+    display: grid;
+    gap: 20px;
+    width: auto;
+  }
+  
+.container3 {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+  margin-top: 90px !important;
+}
+
+.field {
+	
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+  display: fixed;
+
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #ffffff;
+  	border-bottom: 2px solid #ffffff;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.arrow {
+	width: 0;
+	height: 40px;
+	border: 1px solid #333;
+	position: relative;
+	animation: scroll 1.5s infinite;
+	-webkit-animation: scroll 1.5s infinite;
+	&::after {
+		content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    width: 1px;
+    height: 10px;
+    border-top: 10px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+	}
+}
+
+@keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}
+
+#perloder{
+  background:#13072E url(img/galaxi.gif) no-repeat center !important;
+    background-size: 44rem !important;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
