@@ -491,7 +491,7 @@ margin-top: 50px;
 #perloderx{
   background:#13072E url(img/galaxi.gif) no-repeat center !important;
     background-size: 24rem !important;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
