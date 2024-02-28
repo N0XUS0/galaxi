@@ -84,7 +84,7 @@ body{
   .swiper-slide span {
     text-transform: uppercase;
     color: #fff;
-    background: #3380c0;
+    background: purple;
     padding: 7px 18px 7px 25px;
     display: inline-block;
     border-radius: 0 20px 20px 0px;
@@ -98,6 +98,29 @@ body{
       background: #055596;
     margin-bottom: 10px;
   }
+  .swiper-slide--1 {
+    background: 
+      url("img/teh/1.png")
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide--2 {
+    background:
+    url("img/teh/2.png")
+        no-repeat 50% 50% / cover;
+  }
+  .swiper-slide--3{
+    background: 
+    url("img/teh/3.png")
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide--4 {
+    background: 
+      url("img/teh/4.png")
+        no-repeat 50% 50% / cover;
+  }
+
   
   
   
@@ -190,7 +213,7 @@ body{
   animation: textclip 2s linear infinite;
   display: inline-block;
       font-size: 90px;
-      padding-top: 60%;
+      padding-top: 28%;
 }
 
 @keyframes textclip {
@@ -302,7 +325,7 @@ margin-top: 50px;
 }
 
 .custom-shape-divider-top-1709003081 .shape-fill {
-    fill: #13072E;
+    fill: purple;
 }
 .button-89 {
     --b: 7px;   /* border thickness */
@@ -467,11 +490,48 @@ margin-top: 50px;
 
 #perloder{
   background:#13072E url(img/galaxi.gif) no-repeat center !important;
-    background-size: 18rem !important;
+    background-size: 24rem !important;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+    
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
 }
