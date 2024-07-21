@@ -4,7 +4,23 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+ 
+.reveal{
+  
+  transform: translateY(0);
+  opacity: 0;
+  transition: 1s all ease;
+  margin-bottom: 50px !important;
+}
 
+.reveal.active{
+  transform: translateY(40px);
+  opacity: 1;
+}
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
 .description {
     display: grid;
     justify-content: center;
